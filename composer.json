@@ -19,7 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jascha030\\Speeltuin\\": "src/"
+            "Jascha030\\Speeltuin\\": "public/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jascha030\\Speeltuin\\": "public/tests/"
         }
     },
     "config": {
