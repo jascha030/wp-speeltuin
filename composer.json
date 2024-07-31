@@ -30,8 +30,8 @@
     "config": {
         "allow-plugins": {
             "bamarni/composer-bin-plugin": true,
-            "ergebnis/composer-normalize": true,
             "composer/installers": true,
+            "ergebnis/composer-normalize": true,
             "roots/wordpress-core-installer": true
         },
         "platform": {
