@@ -13,6 +13,5 @@
 ## Development
 /tools/*
 !/tools/phive
-!/tools/*/composer.json
-!/tools/*/composer.lock
-
+!/tools/*/
+/tools/*/vendor/
