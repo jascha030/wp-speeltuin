@@ -61,5 +61,12 @@
             ]
         },
         "wordpress-install-dir": "public/wordpress"
+    },
+    "scripts": {
+        "tools": [
+            "@putenv XDEBUG_MODE=off",
+            "@putenv COMPOSER_ALLOW_SUPERUSER=1",
+            "./tools/phive install --trust-gpg-keys 4AA394086372C20A"
+        ]
     }
 }
