@@ -37,6 +37,8 @@
         "platform": {
             "php": "8.2"
         },
+        "platform-check": false,
+        "sort-packages": true,
         "vendor-dir": "public/vendor"
     },
     "extra": {
