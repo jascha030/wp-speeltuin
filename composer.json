@@ -65,6 +65,10 @@
         "wordpress-install-dir": "public/wordpress"
     },
     "scripts": {
+        "analyze": [
+            "@composer install --optimize-autoloader",
+            "vendor/bin/phpstan analyze -c phpstan.neon.dist --memory-limit=-1"
+        ],
         "tools": [
             "@putenv XDEBUG_MODE=off",
             "@putenv COMPOSER_ALLOW_SUPERUSER=1",
