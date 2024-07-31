@@ -1,0 +1,60 @@
+{
+    "name": "jascha030/speeltuin",
+    "authors": [
+        {
+            "name": "Jascha030",
+            "email": "contact@jaschavanaalst.nl"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "composer/installers": "^2.3",
+        "roots/wordpress-core-installer": "^1.100",
+        "roots/wordpress-no-content": "^6.6"
+    },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8",
+        "ergebnis/composer-normalize": "^2.43",
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jascha030\\Speeltuin\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true,
+            "ergebnis/composer-normalize": true,
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true
+        },
+        "platform": {
+            "php": "8.2"
+        },
+        "vendor-dir": "public/vendor"
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": true,
+            "forward-command": true,
+            "target-directory": "tools"
+        },
+        "composer-normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
+        },
+        "installer-paths": {
+            "public/wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "public/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "public/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    }
+}

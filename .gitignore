@@ -1,0 +1,18 @@
+### Speeltuin
+
+## Project
+/.idea/
+
+## Environment
+/.phpactor.json
+
+## Library
+/public/wordpress/
+/public/vendor/
+
+## Development
+/tools/*
+!/tools/phive
+!/tools/*/composer.json
+!/tools/*/composer.lock
+
